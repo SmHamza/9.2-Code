@@ -168,7 +168,7 @@ void loop() {
   else{
     exitcheck();
   }
-  motioncheck();
+  
   if (enter){
     Serial.print("Enter, ");
   }
@@ -189,6 +189,7 @@ void loop() {
     digitalWrite(LED_BUILTIN,LOW);
     systemoff();
   }
+  motioncheck();
   delay(1000);
   Serial.println();
 }
