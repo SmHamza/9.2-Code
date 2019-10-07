@@ -156,6 +156,8 @@ void systemon(){
     Serial.print("Lights off");
     Serial.print(", ");
   }
+  temp = dht.readTemperature();
+  light=analogRead(lightsensor);
 }
 
 
