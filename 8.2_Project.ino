@@ -129,10 +129,9 @@ void systemon(){
     Serial.print("Fan off");
     Serial.print(", ");
   }
-  if (light-analogRead(lightsensor);<10 or light-analogRead(lightsensor); >-15){
+  if (light-analogRead(lightsensor)<10 or light-analogRead(lightsensor) >-15){
     light=analogRead(lightsensor);
   }
-  light=analogRead(lightsensor);
   Serial.print(light);
   Serial.print(", ");
   if (not light_on)
